@@ -1,16 +1,12 @@
-# demo
+# koa-router 后端代理请求qq音乐接口
 
-## Project setup
+## 安装
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 启动
 ```
-npm run serve
+npm start
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
+默认端口为 3000，可根据需要更改
