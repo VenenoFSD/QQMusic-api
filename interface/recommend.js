@@ -1,6 +1,7 @@
 const Router = require('koa-router')
 const axios = require('axios')
 const {commonParams, headers} = require('./config')
+const jsonpFormat = require('../util')
 
 let router = new Router({
     prefix: '/recommend'
@@ -68,7 +69,7 @@ router
             headers,
             params: data
         }).then(res => {
-            ctx.body = res.data
+            ctx.body = jsonpFormat(res.data)
         }).catch(err => {
             ctx.body = {msg: err}
         })
