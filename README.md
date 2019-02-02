@@ -1,5 +1,4 @@
-# qq音乐接口【koa-router 后端代理】
-
+# qq音乐接口【基于koa-router 后端代理】
 ## 安装
 ```
 npm install
