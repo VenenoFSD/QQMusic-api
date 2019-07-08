@@ -14,6 +14,7 @@ app.use(search.routes()).use(search.allowedMethods())
 app.use(singer.routes()).use(singer.allowedMethods())
 app.use(song.routes()).use(song.allowedMethods())
 
-app.listen(3006, () => {
-    console.log('server start on 3006...')
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log('server start on ' + port + '...')
 })
