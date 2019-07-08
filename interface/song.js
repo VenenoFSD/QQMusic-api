@@ -32,7 +32,7 @@ router
     // 歌曲vkey
     .get('/vkey', async ctx=> {
         const url = 'https://c.y.qq.com/base/fcgi-bin/fcg_music_express_mobile3.fcg'
-        const {songmid, strMediaMid} = ctx.request.query
+        const {songmid} = ctx.request.query
         const data = Object.assign({}, commonParams, {
             hostUin: 0,
             format: 'json',
@@ -42,7 +42,7 @@ router
             uin: 0,
             guid: 5448538077,
             songmid,
-            filename: `C400${strMediaMid}.m4a`
+            filename: `C400${songmid}.m4a`
         })
         ctx.set('Access-Control-Allow-Origin','*')
         await axios.get(url, {
