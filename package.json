@@ -10,7 +10,7 @@
   "author": "Veneno",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "koa": "^2.7.0",
     "koa-router": "^7.4.0"
   }
